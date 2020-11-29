@@ -72,8 +72,8 @@ SELECT CASE(InitialCondition)
   CASE(211) ! Riemann Problem
     TEnd    = 1.0
     Kappa   = 1.4
-    nElemsX = 100
-    nElemsY = 100
+    nElemsX = 600
+    nElemsY = 600
     MESH_X0 = (/0.0,0.0/)
     MESH_X1 = (/1.0,1.0/)
     PrimRefState1 = (/0.5313,0.0,0.0,0.4/)
@@ -84,8 +84,8 @@ SELECT CASE(InitialCondition)
   CASE(214) ! Double Mach Reflection Problem
     TEnd    = 0.25
     Kappa   = 1.4
-    nElemsX = 1600
-    nElemsY = 400
+    nElemsX = 2400
+    nElemsY = 600
     MESH_X0 = (/0.0,0.0/)
     MESH_X1 = (/4.0,1.0/)
     PrimRefState1 = (/8.0,8.25*COS(PI/6.0),-8.25*SIN(PI/6.0),116.5/)
@@ -96,8 +96,8 @@ SELECT CASE(InitialCondition)
   CASE(215) ! Implosion Problem
     TEnd    = 2.5
     Kappa   = 1.4
-    nElemsX = 400
-    nElemsY = 400
+    nElemsX = 600
+    nElemsY = 600
     MESH_X0 = (/0.0,0.0/)
     MESH_X1 = (/0.3,0.3/)
     PrimRefState1 = (/1.0,0.0,0.0,1.0/)
@@ -106,8 +106,8 @@ SELECT CASE(InitialCondition)
   CASE(216) ! Shock-Vortex Interaction
     TEnd    = 0.2
     Kappa   = 1.4
-    nElemsX = 800
-    nElemsY = 400
+    nElemsX = 1200
+    nElemsY = 600
     MESH_X0 = (/0.0,0.0/)
     MESH_X1 = (/2.0,1.0/)
     BoundaryConditionsType = (/2,2,2,2/)
